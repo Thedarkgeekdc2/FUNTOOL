@@ -1,6 +1,6 @@
 import os
 from gtts import gTTS
-os.system("espeak 'please wait, we are working on it.'")
+os.system("espeak 'please wait, we are working on it. fuck you RAAZ,BABU'")
 os.system("mplayer term.mp3 > /dev/null 2>&1")
 os.system("clear")
 os.system("bash banner | lolcat")
