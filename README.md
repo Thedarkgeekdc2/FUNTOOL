@@ -28,7 +28,11 @@ tHIS IS NOW IN TRAIL VERSION.
 
 * `git clone https://github.com/Thedarkgeekdc2/MP3`
 
-* `bash seetup.sh`
+* `bash setup.sh`
+
+## RUN
+
+* `python mp3.py`
 
 
 
