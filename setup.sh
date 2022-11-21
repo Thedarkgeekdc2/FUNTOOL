@@ -2,7 +2,7 @@ pkg update
 
 pkg install mplayer -y
 
-pip install mpgy123
+pip install mpgy321
 
 pip install gtts
 
