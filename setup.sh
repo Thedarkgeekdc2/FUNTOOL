@@ -9,8 +9,14 @@ pip install gtts
 pip install playsound
  
 sleeep 3
-echo -e "Setup complete"
 
-echo -e "next time run python mp3.py" | lolcat 
-python mp3.py
+echo -e "=====Setup Complete=====" |lolcat
+
+sleep 4
+
+clear
+sleep 2
+echo -e "Run python mp3.py" |lolcat
+
+sleep 3
 
