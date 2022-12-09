@@ -11,7 +11,7 @@
 </div>
 
 
-# MP3 PLAYER
+# FUNTOOL
 
 ## INTRODUCTION:-
 
@@ -24,15 +24,21 @@ tHIS IS NOW IN TRAIL VERSION.
 
 * `pkg upgrade -y`
 
-* `pkg install git -y`
+* `termux-setup-storage`
 
-* `git clone https://github.com/Thedarkgeekdc2/MP3`
+* `MATHLIB="m" pip install numpy`
 
-* `bash setup.sh`
+* `git clone https://github.com/Thedarkgeekdc2/FUNTOOL`
 
-## RUN
 
-* `python mp3.py`
+### IF YOU GOT ERROR THEN TRY OTHERWISE SKIP THIS.
+
+* `pip install tqdm gtts playsound requests imageio moviepy`
+
+
+## RUN & ENJOY:
+* `cd FUNTOOL`
+* `bash funtool.sh`
 
 
 
