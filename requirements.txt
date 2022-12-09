@@ -1,0 +1,7 @@
+colorama
+tqdm
+gtts
+playsound
+requests
+imageio
+moviepy
