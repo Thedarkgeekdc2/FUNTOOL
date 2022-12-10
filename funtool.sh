@@ -1,6 +1,10 @@
 pause() {
     read -n1 -r -p "Press any key to continue..." key
     espeak -ven-us+f2 -s170 "Please wait" |  python progress.py
+    cmatrix &
+    PID=$!
+    sleep 3
+    kill $PID
 }
 banner() {
     clear
@@ -24,10 +28,9 @@ banner() {
 
 banner
 pause
-
 install_deps(){
     INSTALL="pkg install -y"
-    packages=(openssl git python figlet toilet mplayer espeak )
+    packages=(openssl git python figlet toilet mplayer espeak cmatrix)
     if [ -n "$INSTALL" ];then
         for package in ${packages[@]}; do
             $INSTALL $package
@@ -90,7 +93,6 @@ do
    elif [ $ch -eq 5 ];then
         banner
         xdg-open https://instagram.com/raazzz136
-        pause
     elif [ $ch -eq 6 ];then
         banner
         exit
@@ -98,6 +100,5 @@ do
         clear
         banner
         echo -e "\e[4;32m Invalid Input !!! \e[0m"
-        pause
     fi
 done
