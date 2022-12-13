@@ -82,7 +82,7 @@ do
     echo -e "\e[93m[3]   QrCode Genrator"
     echo -e "\e[93m[4]   S-Fast SMS Bombing"
     echo -e "\e[93m[5]   Follow me on Instagram \e[0m"
-    echo -e "\e[93m[6]   Update the  Tool\e[0m"
+    echo -e "\e[93m[6]   Update Tool to get new Features\e[0m"
     echo -e "\e[93m[7]   Exit \e[1;96m"
     read -p "Choose option[1-7] :" ch
     clear
