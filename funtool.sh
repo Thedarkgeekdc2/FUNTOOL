@@ -111,7 +111,7 @@ do
         python boom.py
         sleep 3
         exit
-        exit
+        exit 1
    elif [ $ch -eq 5 ];then
         banner
         xdg-open https://instagram.com/raazzz136
@@ -122,6 +122,7 @@ do
         echo -e "\e[1;93m                   [!! See You Soon !!]\e[0m"  && espeak -ven-us+f2 -s160 "GOODBYE!"
         echo ""
         exit
+        exit 1
     else
         clear
         banner
