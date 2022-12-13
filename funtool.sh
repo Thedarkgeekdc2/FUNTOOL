@@ -109,6 +109,8 @@ do
         exit
     elif [ $ch -eq 4 ];then
         python boom.py
+        sleep 3
+        exit
         exit
    elif [ $ch -eq 5 ];then
         banner
