@@ -26,6 +26,8 @@ tHIS IS NOW IN TRAIL VERSION.
 
 * `termux-setup-storage`
 
+* `pkg install python`
+
 * `MATHLIB="m" pip install numpy`
 
 * `git clone https://github.com/Thedarkgeekdc2/FUNTOOL`
