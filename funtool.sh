@@ -99,6 +99,7 @@ do
     else
         clear
         banner
-        echo -e "\e[4;32m Invalid Input !!! \e[0m"
+        echo -e "\e[4;32m 𝐈𝐧𝐯𝐚𝐥𝐢𝐝 𝐈𝐧𝐩𝐮𝐭 !!! \e[0m"
+        sleep 2
     fi
 done
