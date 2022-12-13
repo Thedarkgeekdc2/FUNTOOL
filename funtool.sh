@@ -83,6 +83,7 @@ do
     elif [ $ch -eq 3 ];then
         banner
         echo -e "\e[92m  COMING SOON!!\e[0m"
+        echo ""
         exit
     elif [ $ch -eq 4 ];then
         python boom.py
@@ -95,6 +96,7 @@ do
         xdg-open https://instagram.com/raazzz136
     elif [ $ch -eq 6 ];then
         banner
+        echo -e "\e[1;93m                   [!! See You Soon !!]\e[0m"  && espeak -ven-us+f2 -s160 "GOODBYE!"
         exit
     else
         clear
