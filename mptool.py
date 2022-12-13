@@ -22,12 +22,14 @@ def bann_text():
                                          """
     if ASCII_MODE:
         logo = ""
-    author = "Created By: "+"DINESH CHAUDHAY"
+    author = "Created By: "+"𝗗𝗜𝗡𝗘𝗦𝗛 𝗖𝗛𝗔𝗨𝗗𝗛𝗔𝗥𝗬"
+    hint =  "𝐇𝐢𝐧𝐭 := " + "𝖲𝖾𝗅𝖾𝖼𝗍 & 𝖲𝖺𝗏𝖾 𝖿𝗂𝗅𝖾𝗌 𝗈𝗇𝗅𝗒 𝖥𝗋𝗈𝗆 /𝗦𝘁𝗼𝗿𝗮𝗴𝗲/𝗗𝗼𝘄𝗻𝗹𝗼𝗮𝗱/"
     print(random.choice(ALL_COLORS)+ author + RESET_ALL)
     print(random.choice(ALL_COLORS) + logo + RESET_ALL)
     print()
-
-
+    print(random.choice(ALL_COLORS) + hint)
+    print()
+    print()
 
 
 ALL_COLORS = [Fore.GREEN, Fore.RED, Fore.YELLOW, Fore.BLUE,
