@@ -109,9 +109,6 @@ do
         exit
     elif [ $ch -eq 4 ];then
         python boom.py
-        clear
-        banner
-        echo -e "\e[1;93m                   MESSAGES SENT Successfully!!\e[0m"
         exit
    elif [ $ch -eq 5 ];then
         banner
