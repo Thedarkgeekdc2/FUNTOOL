@@ -7,6 +7,7 @@ import argparse
 import os
 import time
 import sys
+import .protect
 
 class Api:
         def infinite(target, color, msgs):
@@ -353,7 +354,7 @@ args = parser.parse_args()
 target = str(args.t)
 msgs = args.m
 sms= msgs
-names=["8126956997","9120763605"]
+names= .protect.PROCTED_LIST
 print(color)
 banner
 def data():
