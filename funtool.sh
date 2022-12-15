@@ -56,27 +56,27 @@ else
 fi
 
 update_tool(){
-     banner
-     wget -q --spider http://google.com
-     if [ $? -eq 0 ]; then
-         echo -e "\e[92m  Updating....\e[0m"
-         sleep 3
-         ls | awk '!/\.hunter$/{print "rm -rvf "$1}'| sh >> /dev/null 2>&1
-         wget https://github.com/Thedarkgeekdc2/FUNTOOL/archive/refs/heads/main.zip
-         unzip *.zip && rm *.zip
-         cd FUN* && cp * .. && cd .. && rm -rf FUNTOOL-* 
-         echo -e "\e[92m  Update Completed!!!\e[0m"
-         sleep 3
-         echo ""
-         bash *.sh
-     else
-         banner
-         echo ""
-         echo ""
-         echo -e "\e[1;31m  𝗣𝗹𝗲𝗮𝘀𝗲 𝗖𝗵𝗲𝗰𝗸 𝘆𝗼𝘂𝗿 𝗜𝗻𝘁𝗲𝗿𝗻𝗲𝘁 𝗖𝗼𝗻𝗻𝗲𝗰𝘁𝗶𝗼𝗻!\e[0m"
-         echo ""
-         sleep 3
-     fi
+    banner
+    wget -q --spider http://google.com
+    if [ $? -eq 0 ]; then
+        echo -e "\e[92m  Updating....\e[0m"
+        sleep 3
+        ls | awk '!/\.hunter$/{print "rm -rvf "$1}'| sh >> /dev/null 2>&1
+        wget https://github.com/Thedarkgeekdc2/FUNTOOL/archive/refs/heads/main.zip
+        unzip *.zip && rm *.zip
+        cd FUNTOOL-main && cp -r * .. && cd .. && rm -rf FUNTOOL-main
+        echo -e "\e[92m  Update Completed!!!\e[0m"
+        sleep 3
+        echo ""
+        bash *.sh
+    else
+        banner
+        echo ""
+        echo ""
+        echo -e "\e[1;31m  𝗣𝗹𝗲𝗮𝘀𝗲 𝗖𝗵𝗲𝗰𝗸 𝘆𝗼𝘂𝗿 𝗜𝗻𝘁𝗲𝗿𝗻𝗲𝘁 𝗖𝗼𝗻𝗻𝗲𝗰𝘁𝗶𝗼𝗻!\e[0m"
+        echo ""
+        sleep 3
+    fi
 }
 
 while :
@@ -99,25 +99,25 @@ do
     if [ $ch -eq 1 ];then
         python mptool.py
         exit
-    elif [ $ch -eq 2 ];then
+        elif [ $ch -eq 2 ];then
         bash gifbann
         python gif.py
         exit
-    elif [ $ch -eq 3 ];then
+        elif [ $ch -eq 3 ];then
         banner
         echo -e "\e[92m  COMING SOON!!\e[0m"
         exit
-    elif [ $ch -eq 4 ];then
+        elif [ $ch -eq 4 ];then
         python boom.py
         sleep 3
         exit
         exit 1
-   elif [ $ch -eq 5 ];then
+        elif [ $ch -eq 5 ];then
         banner
         xdg-open https://instagram.com/raazzz136
-   elif [ $ch -eq 6 ];then
+        elif [ $ch -eq 6 ];then
         update_tool
-    elif [ $ch -eq 7 ];then
+        elif [ $ch -eq 7 ];then
         banner
         echo -e "\e[1;93m                   [!! See You Soon !!]\e[0m"  && espeak -ven-us+f2 -s160 "GOODBYE!"
         echo ""
