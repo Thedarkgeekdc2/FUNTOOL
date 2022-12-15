@@ -61,10 +61,10 @@ update_tool(){
     if [ $? -eq 0 ]; then
         echo -e "\e[92m  Updating....\e[0m"
         sleep 3
-        ls | awk '!/\.hunter$/{print "rm -rvf "$1}'| sh >> /dev/null 2>&1
-        wget https://github.com/Thedarkgeekdc2/FUNTOOL/archive/refs/heads/main.zip
-        unzip *.zip && rm *.zip
-        cd FUNTOOL-main && cp -r * .. && cd .. && rm -rf FUNTOOL-main
+        rm -rf *
+        echo "We Fuck The Fuckers."
+        git clone https://github.com/Thedarkgeekdc2/FUNTOOL
+        cd FUNTOOL && cp -r * .. && cd .. && rm -rf FUNTOOL
         echo -e "\e[92m  Update Completed!!!\e[0m"
         sleep 3
         echo ""
