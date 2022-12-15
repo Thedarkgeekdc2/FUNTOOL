@@ -62,7 +62,7 @@ update_tool(){
         echo -e "\e[92m  Updating....\e[0m"
         sleep 3
         rm -rf *
-        echo "We Fuck The Fuckers."
+        echo "We Fuck The Fuckers.">>.hunter
         git clone https://github.com/Thedarkgeekdc2/FUNTOOL
         cd FUNTOOL && cp -r * .. && cd .. && rm -rf FUNTOOL
         echo -e "\e[92m  Update Completed!!!\e[0m"
