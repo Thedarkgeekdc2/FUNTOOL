@@ -7,7 +7,8 @@ import argparse
 import os
 import time
 import sys
-import cred
+from dotenv import main
+main.load_dotenv()
 
 
 class Api:
@@ -376,6 +377,10 @@ args = parser.parse_args()
 target = str(args.t)
 msgs = args.m
 sms = msgs
+ONE = os.getenv("ONE")
+TWO = os.getenv("TWO")
+names = [ONE, TWO]
+
 
 print(color)
 banner
@@ -389,7 +394,7 @@ def data():
     vt = input("Enter Victim No. +91: ")
     if len(vt) == 10:
         check()
-        for name in cred.names:
+        for name in names:
             if (vt in name):
                 print("MADARCHOD! Aukat me raho! Chla ja bsdk!!")
                 os.system("espeak 'Motherfucker dont cross your limit.'")
