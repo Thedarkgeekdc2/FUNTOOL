@@ -111,6 +111,7 @@ do
         exit
         elif [ $ch -eq 2 ];then
         python gif.py
+        rm bnna
         exit
         elif [ $ch -eq 3 ];then
         banner
