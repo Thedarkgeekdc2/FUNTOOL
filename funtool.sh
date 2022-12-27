@@ -110,7 +110,6 @@ do
         python mptool.py
         exit
         elif [ $ch -eq 2 ];then
-        bash gifbann
         python gif.py
         exit
         elif [ $ch -eq 3 ];then
